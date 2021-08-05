@@ -1,3 +1,3 @@
-const url = "http://localhost:5000/api/";
+const url = "https://server--ecommerce.herokuapp.com/api/";
 
 export default url;

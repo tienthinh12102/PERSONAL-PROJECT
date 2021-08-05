@@ -7,6 +7,7 @@ import { getProducts } from "../../../../../redux/actions/productAction";
 import { getRelatedProducts } from "../../../../../redux/actions/relatedProduct";
 import ItemProduct from "./ItemProduct";
 import "./style.scss";
+import urlApi from '../../../../../urlApi';
 
 function Products() {
   const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ function Products() {
   useEffect(() => {
     dispatch(getProducts());
 
-    axios.get("http://localhost:5000/api/products")
+    axios.get(`${urlApi}products`)
       .then(res => {
         const topProducts = res.data.sort((a, b) => b.rating - a.rating).slice(0, 8);
         setProducts(topProducts);
