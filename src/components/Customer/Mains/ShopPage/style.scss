@@ -1,0 +1,65 @@
+.dropdownmenu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 3rem;
+    background-color: rgb(238, 238, 238);
+    height: 100px;
+
+    .dropdown {
+
+        button {
+            width: 200px;
+            background-color: rgb(238, 238, 238);
+            border: none;
+            color: #758A53;
+            font-size: 150%;
+        }
+
+        ul {
+             width: 200px;
+             
+             li{
+                 padding: .5rem 0;
+
+                 a {
+                     font-size: 150%;
+                     color: black;
+                 }
+
+                 a:hover, a:active {
+                    color: #758A53;
+                    background-color: white;
+                 }
+             }
+        }
+
+    }
+
+}
+
+.shoppage__pagination {
+
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+
+    nav ul li a {
+        color: black;
+        font-size: 150%;
+    }
+
+    nav ul li a:hover, nav ul li a:active {
+        transition: all .2s;
+        background-color: #758A53 ;
+        color: white;
+        border: none;
+    }
+}
+
+.spinner-border {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+}

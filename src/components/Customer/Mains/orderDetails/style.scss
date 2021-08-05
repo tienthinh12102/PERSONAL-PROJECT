@@ -1,0 +1,79 @@
+.orderDetails {
+    margin: 3rem 0;
+    margin: 48px auto;
+    color: #758a53;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.orderDetails__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.OrderDetails__content {
+    padding: 0 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #758a53;
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &--title,
+    &--item,
+    &--deliverycharges,
+    &--yourName,
+    &--deliveryAddress,
+    &--yourPhone,
+    &--timeOrder,
+    &--orderNotes,
+    &--totalprice {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &--item {
+        padding-left: 1rem;
+    }
+}
+
+.OrderDetails__content--totalprice > p {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.OrderDetails__content--item > p > strong {
+    font-weight: bold;
+}
+
+.OrderDetails__content--orderNotes {
+    display: flex;
+    flex-direction: column;
+    p{
+        margin-bottom: .7rem;
+    }
+
+    textarea {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        outline: none;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        color: #758a53 ;
+        background-color: white;
+    }
+}
+

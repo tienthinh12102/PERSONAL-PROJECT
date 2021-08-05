@@ -1,0 +1,246 @@
+$primary-color: #758A53;
+
+@mixin center($display: flex, $content: center, $items: center) {
+  display: $display;
+  justify-content: $content;
+  align-items: $items;
+}
+
+
+@keyframes example {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+.header {
+  font-family: 'Playfair Display', serif;
+  @include center($content: initial);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 5rem;
+  // position: relative;
+  // z-index: 1;
+
+  & > .signin__overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #1d1d1f99;
+    z-index: 1;
+    transition: background-color linear 0.3s;
+    cursor: pointer;
+  }
+
+  & > .menu__overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #1d1d1f99;
+    z-index: 1;
+    transition: background-color linear 0.3s;
+    cursor: pointer;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-color: #1d1d1f99;
+    z-index: 1;
+    transition: background-color linear 0.3s;
+    cursor: pointer;
+  }
+
+  &__logo {
+    padding: 0 0 0 2rem;
+    height: 5rem;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+
+    & > * {
+      padding: 0 1.15rem;
+      justify-items: center;
+      height: 100%;
+      @include center($content: initial);
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $primary-color;
+        height: 3px;
+        bottom: 0;
+      }
+
+      &:hover  {
+        color: $primary-color;
+        transition: color 0.3s;
+        &::before {
+          animation-name: example;
+          animation-duration: 1s;  
+          animation-fill-mode: both;
+        }
+      }
+    }
+  }
+
+  &-group {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1rem 0 0;
+
+    &__cart {
+      position: relative;
+
+      &--count {
+        position: absolute;
+        left: 1rem;
+        top: 0.7rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        background-color: $primary-color;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    &__collap {
+
+      &-mobile {
+          display: none;
+      }
+    }
+
+    & i {
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    & i.profile-icon {
+      font-size: 1.7rem;
+      padding-left: 20px;
+    }
+
+    & > div {
+      padding: 0 0.5rem;
+    }
+
+    & input {
+      width: 100%;
+      height: 3rem;
+      background-color: #F4F4F4;
+      border: none;
+      outline: none;
+      border-radius: 5rem;
+      padding: 0 2rem;
+      color: #758A53;
+
+      &::-webkit-input-placeholder {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        right: 1rem;
+      }
+    }
+
+    span {
+      width: 90%;
+    }
+  }
+}
+
+
+// .header-group__cart-mobile {
+//   display: none;
+// }
+
+.profile-icon {
+  font-size: 1.5rem;
+}
+
+.search-form {
+  &__form {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    &__menu {
+      width: 55%;
+      &--item {
+        padding: 0;
+      }
+     }
+
+    &-group {
+      width: 35%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .header {
+    &__menu {
+      &--item {
+        padding: 0 0.6rem;
+      }
+     }
+
+     &-group {
+
+      input::placeholder{
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .search-form {
+    &__form {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    &__menu {
+      display: none;
+     }
+
+    &-group {
+      width: 73%;
+      margin-left: 5rem;
+      &__collap {
+        &-mobile {
+            display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .header {
+    &-group {
+      margin-left: 2rem;
+    }
+  }
+}
+

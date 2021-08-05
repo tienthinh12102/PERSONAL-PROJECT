@@ -1,0 +1,134 @@
+@mixin center($display: flex, $content: center, $items: center) {
+  display: $display;
+  justify-content: $content;
+  align-items: $items;
+}
+
+.btn.btn--primary {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  @include center;
+}
+
+.plants {
+  background: url(../../../../../assests/images/plants.jpeg) no-repeat center
+    center fixed;
+  height: 25rem;
+  background-size: cover;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  @include center($items: initial);
+  z-index: 0;
+  width: 93%;
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000066;
+  }
+
+  &__title {
+    padding-top: 7rem;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    @include center;
+    flex-direction: column;
+    font-size: 5vw;
+
+    & > * {
+      padding: 1rem 0;
+      font-weight: bold;
+    }
+
+    &-group {
+      font-size: 1.1vw;
+      background-color: #fff;
+      width: 12vw;
+      height: 3vw;
+      margin-top: 2rem;
+      font-weight: 200;
+
+      &:hover > span {
+        color: #fff;
+        transition: color 0.5s linear;
+      }
+
+      & > span {
+        font-size: 1.3vw;
+        z-index: 2;
+        font-family: "Playfair Display", serif;
+        white-space: nowrap;
+        &:last-child {
+          padding-left: 1rem;
+        }
+      }
+
+      &--overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #748a53;
+        transform: translateX(-100%);
+        z-index: 1;
+      }
+
+      &:hover &--overlay {
+        @keyframes identifier {
+          from {
+            transform: translateX(-100%);
+          }
+
+          to {
+            transform: translateX(0%);
+            transition: all 1s ease-in-out;
+          }
+        }
+
+        animation-name: identifier;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    & > p {
+      font-size: 1.3vw;
+      font-weight: 400;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .plants {
+    margin: 40rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .plants {
+    margin: 43rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .plants {
+    margin: 48rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .plants {
+    margin: 45rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .plants {
+    margin: 53rem auto 0;
+  }
+}

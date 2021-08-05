@@ -1,0 +1,197 @@
+.form__products--add, .form__category--add {
+    
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Roboto";
+
+    * {
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 100% ;
+        padding: .5rem;
+        font-size: 1rem;
+        border: 1px solid rgba(3, 3, 3, 0.123);
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #719ECE;
+        box-shadow: 0 0 10px #719ECE;
+    }
+
+    span {
+        font-size: .9rem;
+        color: red;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        line-height: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.103);
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+     textarea:focus {
+        outline: none;
+        border-color: #719ECE;
+        box-shadow: 0 0 10px #719ECE;
+     }
+
+     select {
+         width: 100%;
+         height: 43px;
+         border: 1px solid rgba(0, 0, 0, 0.116);
+         outline: none;
+         border-radius: 5px;
+
+         padding: 0 .3rem;
+         font-size: 1rem;
+         color: black;
+         margin-bottom: 1rem;
+     }
+
+     select > option {
+         font-size: 1rem;
+         padding: 1rem 0.5rem;
+     }
+}
+
+.admin__button--logout {
+    border: none;
+    background-color: #3f51b5;
+    outline: none;
+    margin-left: 1.5rem;
+    padding: 0 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.admin__button--logout:hover, .admin__button--logout:active {
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px white;
+    color: rgba(190, 6, 6, 0.753);
+    transition: all .2s;
+    background-color: white;
+}
+
+.makeStyles-container-13 {
+    padding-bottom: 0px;
+}
+
+
+.MuiDataGrid-columnHeader--alignCenter .MuiDataGrid-columnHeader .MuiDataGrid-columnHeaderCheckbox {
+    display: none;
+}
+
+#exampleModalLongTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.555);
+}
+
+.modal-content1 {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    overflow-y: scroll;
+}
+.modal-header {
+    .close {
+        span {
+            font-size: 2.5rem;
+        }
+    }
+}
+.modal-body {
+
+    font-family: "Roboto";
+    .form__products--add, .form__category--add {
+    
+        width: 85%;
+        margin: 0 auto;
+    
+        * {
+            margin-top: 1rem;
+        }
+    
+        input {
+            width: 100% ;
+            padding: .5rem;
+            font-size: 1rem;
+            border: 1px solid rgba(3, 3, 3, 0.123);
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+    
+        input:focus {
+            outline: none;
+            border-color: #719ECE;
+            box-shadow: 0 0 10px #719ECE;
+        }
+    
+        span {
+            font-size: .9rem;
+            color: red;
+        }
+    
+        button {
+            width: 100%;
+        }
+    
+        textarea {
+            width: 100%;
+            line-height: 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.103);
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+    
+         textarea:focus {
+            outline: none;
+            border-color: #719ECE;
+            box-shadow: 0 0 10px #719ECE;
+         }
+    
+         select {
+             width: 100%;
+             height: 43px;
+             border: 1px solid rgba(0, 0, 0, 0.116);
+             outline: none;
+             border-radius: 5px;
+    
+             padding: 0 .3rem;
+             font-size: 1rem;
+             color: black;
+             margin-bottom: 1rem;
+         }
+    
+         select > option {
+             font-size: 1rem;
+             padding: 1rem 0.5rem;
+         }
+    }
+}

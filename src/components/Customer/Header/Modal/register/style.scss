@@ -1,0 +1,185 @@
+.form__signin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #758A53;  
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+
+    z-index: 3;
+    transform: translateX(100%);
+    overflow-y: auto;
+
+    &--close {
+        font-size: 2.5rem;
+        cursor: pointer;
+        width: 100%;
+        margin: 10px 20px;
+    }
+
+    &--title {
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
+
+
+.form__content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+
+    margin: 0 auto;
+
+
+    .button__group {
+        display: flex;
+        justify-content: center;
+
+        &--login, &--register {
+            background-color:  #758A53 ;
+            color: white;
+            font-size: 1.7rem;
+            padding-bottom: .5rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.226) ;
+            border: none;
+            margin: 2rem 2rem;
+        }
+
+        &--login:hover, &--register:hover,
+        &--login:active, &--register:active {
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 2px solid rgb(255, 255, 255)
+        }
+    }
+
+    .form {
+
+        margin-top: 1rem;
+
+        &__login {
+        
+            input {
+                padding: .6rem 1rem;
+            }
+        }
+
+        &__register {
+
+            input {
+                padding: .2rem 1rem;
+            }
+
+            select{
+                width: 100%;
+                height: 42px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                padding-left: .5rem;
+                color: #758A53 ;
+                // margin: 1rem 0;
+            }
+            select > option {
+                color: #758A53 ;
+                font-size: 1.1rem;
+            }
+        }
+
+        .button__submit {
+            width: 100%;
+            display: block;
+            color:  #758A53;
+            font-size: 1.3rem;
+            padding: .5rem 1rem;
+            margin: 2rem auto 5rem;
+            
+
+            border: none;
+            border-radius: 8px;
+        }
+
+        .button__submit:hover, .button__submit:active{
+            box-shadow: 0 0 5px white;
+        }
+
+        input {
+            color: #758A53 ;
+            margin: 1rem 0;
+        
+            input::placeholder {
+                color: #758A53;
+            }
+        }
+
+        input#date {
+            background-color: white;
+            padding: .7rem;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+#date-label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.makeStyles-textField-3 {
+    width: 100%;
+}
+
+.MuiInput-underline:before {
+    display: none;
+}
+
+.MuiInput-underline:after {
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .form__signin {
+      width: 100%;
+    } 
+}
+
+@media only screen and (min-width: 576px) {
+   .form__signin {
+      width: 85%;
+    }  
+}
+
+@media only screen and (min-width: 768px) {
+  .form__signin {
+      width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+    .form__signin {
+      width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .form__signin {
+        width: 50%;
+    }
+}
+

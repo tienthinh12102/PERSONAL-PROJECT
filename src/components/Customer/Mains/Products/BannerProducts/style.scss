@@ -1,0 +1,45 @@
+.product__banner {
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJhbm5lciUyMGdyZWVufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 17rem;
+     color: white;
+
+    &--overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.103);
+        height: 17rem;
+
+        .product__banner--title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .product__banner--item {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+
+                li {
+                    content: '\e87a';
+                    color: #fff;
+                    font-size: 20px;
+                    vertical-align: middle;
+                    padding: 0 15px;
+                }
+
+                li:hover {
+                    color:#758A53;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}

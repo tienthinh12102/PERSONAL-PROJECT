@@ -1,0 +1,124 @@
+.modal-dialog {
+    max-width: 950px;
+}
+
+.modal-body {
+
+    .productDetails__container {
+
+        padding: 0;
+
+        .slide-container {
+            height: 450px;
+
+            .each-slide {
+                height: 450px;
+
+                img {
+                width: 250px;
+                height: 450px;
+                margin-left: 6.5rem;
+                object-fit: scale-down;
+                }
+            }
+        }
+
+         .productDetails__title {
+            font-size: 150%;
+        }
+
+        .productDetails__meta {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+
+            .productDetails__price {
+                display: flex;
+                font-size: 130%;
+
+                &--cost {
+                    text-decoration: line-through;
+                    margin-right: .5rem;
+                }
+
+                &--sale {
+                    color: #758A53;
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        .productDetails__description {
+            // display: none;
+            font-family: "Roboto", sans-serif;
+            color: #241305;
+            line-height: 1.5rem;
+        }
+
+        .productDetails__action {
+            display: flex;
+            margin: 1rem 0;
+
+            &--quantity {
+
+                button {
+                    height: 50px;
+                    width: 50px;
+                    background-color:rgb(244, 244, 244);
+                }
+            }
+
+            &--addToCart {
+
+                button {
+                    height: 50px;
+                    width: 200px;
+                    color: white;
+                    background-color:#758A53 ;
+                    font-size: 120%;
+                    border: none;
+                }
+
+                button:active {
+                    border: 2px solid black;
+                    border-radius: 5px;
+                }
+            }
+
+            &--love {
+                box-sizing: border-box;
+                border: none;
+                margin-left: .5rem;
+                width: 50px;
+            }
+        }
+
+        .productDetails__attr {
+            padding: .5rem 0;
+            font-size: 120%;
+
+            p {
+                padding: .5rem 0;
+
+                span {
+                    color: #758A53;
+                }
+            }
+        }
+
+        .productDetails__share {
+            font-size: 120%;
+
+            a{
+                margin-left: 2rem;
+                color: black;
+            }
+
+            a:hover {
+                color: rgba(0, 0, 255, 0.575)
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+
+
+.checkout {
+    margin: 3rem 0;
+    font-size: 1.5rem;
+    color: #758a53;
+
+    .userform {
+        padding: 0 3rem;
+        border-right: 2px solid rgba(0, 0, 0, 0.1);
+
+        h1 {
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            margin: 1rem 0;
+        }
+
+        button {
+            margin-top: 1rem;
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.199);
+        }
+
+        button:hover,
+        button:active {
+            transition: all 0.3s;
+            background-color: #758a53;
+            color: white;
+        }
+
+        span {
+            color: red;
+            font-size: 1rem;
+            margin: 0 0;
+        }
+
+        textarea {
+            margin-top: 1rem;
+        }
+    }
+
+    .Order {
+        padding: 0 3rem;
+
+        .totalprice > p {
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+
+        h1 {
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        &__title,
+        &__item,
+        .deliverycharges,
+        .totalprice {
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 1.3rem;
+            margin: 1.5rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            strong {
+                font-weight: bold;
+            }
+        }
+
+        &__item {
+            padding-left: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .checkout {
+        display: flex;
+        flex-direction: column;
+
+        .order2 {
+            order:2;
+        }
+
+        .userform {
+            margin-top: 3rem;
+        }
+    }
+}
+

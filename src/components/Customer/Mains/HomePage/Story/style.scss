@@ -1,0 +1,99 @@
+.story {
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: -1;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+    &--line {
+      height: 0.1px;
+      background-color: #000;
+      width: 3rem;
+    }
+
+    &--desc {
+      padding: 0 0.6rem;
+      font-size: 1.2rem;
+      font-family: 'Playfair Display', serif;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+
+  &__qout {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  &__desc {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    word-spacing: 1px;
+    padding-bottom: 2rem;
+  }
+
+  &__images {
+    padding-bottom: 1.8rem;
+
+    &--image {
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 1rem;
+    }
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    & > span {
+      font-size: 1.1rem;
+      color: #748a53;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .story {
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .story {
+    padding-top: 15rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .story {
+    padding-top: 20rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .story {
+    padding-top: 20rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .story {
+    padding-top: 25rem;
+  }
+}

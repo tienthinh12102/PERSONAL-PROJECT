@@ -1,0 +1,9 @@
+.page-item.active .page-link {
+    background-color: #758A53 !important;
+    border-color: #758A53 !important;
+}
+
+.disabled {
+  pointer-events:none;
+  opacity:0.3;
+}
